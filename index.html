@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Blog Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-serif">
+    <nav
+      id="mySidebar"
+      class="fixed top-14 left-[0.6rem] md:left-[8.5rem] hidden w-2/5 min-w-[300px] bg-white shadow-lg z-20"
+    >
+      <button
+        onclick="samim_close()"
+        class="block w-full p-5 text-xl text-left bg-black text-white"
+      >
+        X
+      </button>
+      <a
+        href="#food"
+        onclick="samim_close()"
+        class="block p-5 text-xl hover:bg-gray-100"
+        >Food</a
+      >
+      <a
+        href="#about"
+        onclick="samim_close()"
+        class="block p-5 text-xl hover:bg-gray-100"
+        >About</a
+      >
+    </nav>
+    <div class="fixed top-0 z-10 w-full bg-white">
+      <div class="mx-auto text-xl max-w-7xl">
+        <div class="flex items-center justify-between">
+          <button onclick="samim_open()" class="p-4">☰</button>
+          <a class="p-4 text-center" href="/">My Food</a>
+          <a class="p-4" href="#contact">Mail</a>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 pt-24 mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 gap-4 mb-8 md:grid-cols-4" id="food">
+        <div class="container text-center ">
+          <img src="assets/sandwich.jpg" alt="Sandwich" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">
+            The Perfect Sandwich, A Real NYC Classic
+          </h3>
+          <p class="mt-2">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="container text-center ">
+          <img src="assets/steak.jpg" alt="Steak" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">
+            Let Me Tell You About This Steak
+          </h3>
+          <p class="mt-2">
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+            <div class="container text-center">
+          <img src="assets/cherries.jpg" alt="Cherries" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">Cherries, interrupted</h3>
+          <p class="mt-2">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          <p>What else?</p>
+        </div>
+            <div class="container text-center">
+          <img src="assets/wine.jpg" alt="Pasta and Wine" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">
+            Once Again, Robust Wine and Vegetable Pasta
+          </h3>
+          <p class="mt-2">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 mb-8 md:grid-cols-4">
+        <div class="container text-center ">
+          <img src="assets/popsicle.jpg" alt="Popsicle" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">All I Need Is a Popsicle</h3>
+          <p class="mt-2">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="container text-center">
+          <img src="assets/salmon.jpg" alt="Salmon" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">Salmon For Your Skin</h3>
+          <p class="mt-2">
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="container text-center">
+          <img src="assets/sandwich.jpg" alt="Sandwich" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">
+            The Perfect Sandwich, A Real Classic
+          </h3>
+          <p class="mt-2">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="container text-center">
+          <img src="assets/croissant.jpg" alt="Croissant" class="w-full" />
+          <h3 class="mt-3 text-xl font-bold">Le French</h3>
+          <p class="mt-2">
+            Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center py-8 space-x-2 ">
+        <a href="#" class="px-4 py-2 border hover:bg-black hover:text-white"
+          >«</a
+        >
+        <a href="#" class="px-4 py-2 text-white bg-black">1</a>
+        <a href="#" class="px-4 py-2 border hover:bg-black hover:text-white"
+          >2</a
+        >
+        <a href="#" class="px-4 py-2 border hover:bg-black hover:text-white"
+          >3</a
+        >
+        <a href="#" class="px-4 py-2 border hover:bg-black hover:text-white"
+          >4</a
+        >
+        <a href="#" class="px-4 py-2 border hover:bg-black hover:text-white"
+          >»</a
+        >
+      </div>
+
+      <hr id="about" class="my-8" />
+
+      <div class="py-8 text-center">
+        <h3 class="text-2xl font-bold">About Me, The Food Man</h3>
+        <img src="assets/chef.jpg" alt="Me" class="mx-auto my-8" />
+        <div class="max-w-4xl mx-auto">
+          <h4 class="text-xl font-bold">I am Who I Am!</h4>
+          <h6 class="mt-2 italic">With Passion For Real, Good Food</h6>
+          <p class="mt-4">
+            Just me, myself and I, exploring the universe of unknownment. I have
+            a heart of love and an interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+          </p>
+        </div>
+      </div>
+
+      <hr class="my-8" />
+
+      <footer class="grid grid-cols-1 gap-8 py-8 md:grid-cols-3 " id="contact">
+        <div>
+          <h3 class="mb-4 text-xl font-bold">FOOTER</h3>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+          <p class="mt-4">Powered by <a href="/" class="underline">samim</a></p>
+        </div>
+
+        <div>
+          <h3 class="mb-4 text-xl font-bold ">BLOG POSTS</h3>
+          <div class="space-y-4">
+            <div class="flex items-center p-4  hover:bg-gray-100">
+              <img src="assets/workshop.jpg" class="w-12 h-12 mr-4" />
+              <div>
+                <div class="text-lg">Lorem</div>
+                <div>Sed mattis nunc</div>
+              </div>
+            </div>
+            <div class="flex items-center p-4  hover:bg-gray-100">
+              <img src="assets/gondol.jpg" class="w-12 h-12 mr-4" />
+              <div>
+                <div class="text-lg">Ipsum</div>
+                <div>Praes tinci sed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-4 text-xl font-bold transition-all">POPULAR TAGS</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-white bg-black">Travel</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700"
+              >New York</span
+            >
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Dinner</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Salmon</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">France</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Drinks</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Ideas</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700"
+              >Flavors</span
+            >
+            <span class="px-2 py-1 text-sm text-white bg-gray-700"
+              >Cuisine</span
+            >
+            <span class="px-2 py-1 text-sm text-white bg-gray-700"
+              >Chicken</span
+            >
+            <span class="px-2 py-1 text-sm text-white bg-gray-700"
+              >Dressing</span
+            >
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Fried</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Fish</span>
+            <span class="px-2 py-1 text-sm text-white bg-gray-700">Duck</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
